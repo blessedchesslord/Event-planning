@@ -1,0 +1,642 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #14161f;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+header{
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 25px 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+}
+
+header:hover{
+    background-color: #14161f;
+}
+
+header h1{
+    color: white;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header h1 span{
+    color: gold;
+    background: none;
+    font-style: italic;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    background: none;
+}
+
+.links a{
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    background: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.links a:hover{
+    color: gold;
+    border-bottom: 1px solid gold;
+    padding-bottom: 0px;
+}
+
+.links a button{
+    text-align: center;
+    color: gold;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    border: 1px solid gold;
+    padding: 10px 10px;
+    cursor: pointer;
+    background:none;
+}
+
+.links a button:hover{
+    background-color: gold;
+    color: black;
+}
+
+main{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    gap: 75px;
+    padding: 200px 50px 100px 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: tanslate 2s;
+}
+
+.left-main{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background: none;
+    width: 100%;
+    gap: 25px;
+    width: 50%;
+    animation: translate 2s;
+}
+
+.left-main h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    gap: 10px;
+    color: gold;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.left-main h3 span{
+    display: block;
+    font-style: italic;
+    background: none;
+    height: 1px;
+    width: 30px;
+    background-color: gold;
+}
+
+.left-main h1{
+    color: white;
+    background: none;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.left-main h1 span{
+    color: gold;
+    background: none;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.left-main p{
+    color: rgba(255, 255, 255, 0.6);
+    background: none;
+    font-size: 15px;
+    width: 40%;
+}
+
+.event-planning{
+    display: flex;
+    align-items: center;
+    background: none;
+    gap: 50px;
+    width: 100%;
+}
+
+.event-planning button{
+    text-align: center;
+    color: black;
+    background-color: gold;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    border: 1px solid gold;
+    padding: 10px 10px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.event-planning button:hover{
+    background: none;
+    color: gold;
+}
+
+.see{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    background: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.see:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.right-main{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    gap: 50px;
+    padding: 0px 100px 50px 100px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    background-color: #21294c;
+    animation: translate 2s;
+}
+
+.run-of-show{
+    display: flex;
+    background: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.run-of-show h3{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    background: none;
+    font-weight: bold;
+}
+
+.run-of-show h2{
+    color: rgba(255, 0, 0, 0.5);
+    background: none;
+    font-size: 15px;
+}
+
+.sample-day{
+    background: none;
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    gap: 50px;
+    width: 100%;
+    border-top: 2px dotted white;
+    padding-top: 25px;
+}
+
+.sample-day h2{
+    color: gold;
+    background: none;
+    font-size: 15px;
+}
+
+.setup{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background: none; 
+    gap: 5px;
+}
+
+.setup h2{
+    color: rgba(255, 255, 255, 0.5);
+    background: none;
+    font-size: 20px;
+}
+
+.setup h3{
+    color: rgba(255, 255, 255, 0.5);
+    background: none;
+    font-size: 10px;
+    font-weight: 100;
+}
+
+section{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 75px;
+    padding: 200px 50px 100px 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: none;
+}
+
+.left-section{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+.left-section h2{
+    color: gold;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.left-section p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+}
+
+.right-section{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background: none;
+    width: 100%;
+    gap: 10px;
+}
+
+.right-top{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background: none;
+    width: 100%;
+    gap: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 25px;
+}
+
+.right-top h1{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.right-top p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 25px;
+}
+
+.right-section h1{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.right-section p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 25px;
+}
+
+.handle-table{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.handle{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 50px;
+    cursor: default;
+}
+
+.handle:hover{
+    background-color: #20253c;
+}
+
+.handle h2{
+    color: rgba(255, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: bold;
+    background: none;
+}
+
+.handle h1{
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    background: none;
+}
+
+.handle p{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+    font-size: 20px;
+    background: none;
+}
+
+.recent-pics{
+    display: flex;
+    align-items: center;
+    align-self: end;
+    justify-content: center;
+    gap: 20px;
+    width: fit-content;
+    background: none;
+}
+
+.left-pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    content-visibility: auto;
+}
+
+.left-pic::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 1%, #14161f 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.date-venue1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    position: absolute;
+    gap: 10px;
+    left: 5px;
+    bottom: 30px;
+    width: 100%;
+    z-index: 2;
+}
+
+.date-venue1 h5{
+    color: rgba(255, 255, 255, 0.5);
+    background: none;
+}
+.date-venue1 h2{
+    color: white;
+    background: none;
+}
+
+.date-venue2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    position: absolute;
+    gap: 10px;
+    left: 5px;
+    bottom: 30px;
+    width: 100%;
+    z-index: 2;
+}
+
+.date-venue2 h5{
+    color: rgba(255, 255, 255, 0.5);
+    background: none;
+}
+.date-venue2 h2{
+    color: white;
+    background: none;
+}
+
+.right-pics{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    background: none;
+}
+
+.right-photos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    content-visibility: auto;
+}
+
+.right-photos::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 1%, #14161f 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.work{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 50px;
+    background: none;
+}
+
+.work h2{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    width: 300px;
+    background: none;
+}
+
+.work p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    width: 200px;
+    background: none;
+}
+
+.work h3{
+    color: gold;
+    font-size: 20px;
+    background: none;
+}
+
+.build{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background: none;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 200px 50px 100px 50px;
+}
+
+.build h2{
+    color: gold;
+    font-weight: 100;
+    font-size: 20px;
+    background: none;
+}
+
+.build h1{
+    color: white;
+    font-size: 40px;
+    background: none;
+}
+
+.build h1 span{
+    color: gold;
+    font-style: italic;
+    background: none;
+}
+
+.build button{
+    color: black;
+    background-color: gold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.build button:hover{
+    background: none;
+    color: gold;
+    border: 1px solid gold;
+}
+
+footer{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: none;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 100px 50px;
+}
+
+.first{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background: none;
+    width: 200px;
+}
+
+.first h2{
+    color: white;
+}
+
+.first h2 span{
+    color: gold;
+}
+
+.first p{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.second{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background: none;
+}
+
+.second h3{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.second a{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.third{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background: none;
+}
+
+.third h3{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.third a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.copyright{
+    color: rgba(255, 255, 255, 0.5);
+    padding: 200px 50px 0px 50px;;
+}
+
+@keyframes translate {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
