@@ -48,6 +48,9 @@ const head = document.querySelector(`header`);
 const leftPics = document.getElementById(`leftPics`);
 const topRight = document.getElementById(`topRight`);
 const bottomRight = document.getElementById(`bottomRight`);
+const ham = document.getElementById(`ham`);
+const close = document.getElementById(`close`);
+const menu = document.getElementById(`menu`);
 
 let currentIndex = 0;
 let currentHead = 0;
@@ -144,3 +147,11 @@ setInterval(() => {
     }
     showBottom();
 }, `10000`);
+
+ham.addEventListener(`click`, function(){
+    menu.style.display = `block`;
+})
+
+close.addEventListener(`click`, function(){
+    menu.style.display = `none`;
+})

@@ -16,6 +16,13 @@ body{
     padding-bottom: 100px;
 }
 
+.desktop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 header{
     position: fixed;
     z-index: 3;
@@ -197,7 +204,7 @@ main{
     flex-direction: column;
     width: 50%;
     gap: 50px;
-    padding: 0px 100px 50px 100px;
+    padding: 0px 50px 50px 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     background-color: #21294c;
@@ -628,6 +635,120 @@ footer{
 .copyright{
     color: rgba(255, 255, 255, 0.5);
     padding: 200px 50px 0px 50px;;
+}
+
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .mobile-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        padding: 20px;
+        top: 0%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .mobile-header h1{
+        color: white;
+        font-size: 35px;
+    }
+
+    .mobile-header h1 span{
+        color: gold;
+        font-style: italic;
+    }
+
+    .ham{
+        width: 40px;
+    }
+
+    .menu{
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
+        flex-direction: column;
+        width: 100%;
+        height: 545px;
+        padding: 20px;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+    }
+
+    .menu-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: none;
+        width: 100%;
+    }
+
+    .menu-header h1{
+        color: white;
+        font-size: 35px;
+        background: none;
+    }
+
+    .menu-header h1 span{
+        color: gold;
+        font-style: italic;
+        background: none;
+    }
+
+    .close{
+        /* display: none; */
+        width: 40px;
+        background: none;
+    }
+
+    .mobile-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background: none;
+        height: 500px;
+        flex-direction: column;
+    }
+
+    .mobile-nav a{
+        color: white;
+        text-decoration: none;
+        background: none;
+        font-size: 35px;
+    }
+
+    .mobile-nav a button{
+        color: gold;
+        font-size: 30px;
+        border: none;
+        background: none;
+        border: 1px solid gold;
+        padding: 10px;
+    }
+
+    .mobile-nav a button:active{
+        background-color: gold;
+        color: black;
+    }
 }
 
 @keyframes translate {
